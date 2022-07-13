@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="adminnavigation.css">
+<link rel="stylesheet" type="text/css" href="addFaculty.css">
+
+
+</head>
+<body>
+	
+		<div class="header">
+			<ul class="nav">
+				<li><a href="adminPage.html">Home</a></li>
+				<li><a href="#" style="color:#1c8adb;font-weight:bold;">Add Faculty</a></li>
+				<li><a href="viewFaculty.php">View Faculty</a></li>
+				<li><a href="viewAttend.php">View Attendance</a></li>
+				<li><a href="logout.php">Logout</a></li>
+				
+			</ul>
+		</div>
+		
+		<div class="register">
+			<form name="add" action="add_faculty.php" method="post">
+            	<div class="re">
+				<h2>Faculty Name<input style="margin-left: 20px;"type="text" name="fname" required></h2>
+				<h2>Mobile no <input style="margin-left: 48px;"type="text" name="fmobile" required> </h2>
+				<h2>Email Id <input style="margin-left: 58px;"type="text" name="femail"required></h2>
+				<h2>Username <input style="margin-left: 42px;"type="text" name="fuser"required></h2>			
+				<h2>Password <input style="margin-left: 45px;"type="password" name="fpas"required></h2>
+
+				<h2>Select Sem
+				<select name="sem" class="type" id="input" onchange="random_function()"required>
+				<option>select semester</option>
+				<option>I</option>
+				<option>II</option>
+				<option>III</option>
+				<option>IV</option>
+				<option>V</option>
+				<option>VI</option>
+				</select>
+				</h2>
+
+				<h2>Select Subject    
+				<select name="sub" class="type" id="output" onchange="random1_function()"required>
+				<option>select subject</option>
+				</select>
+			   </h2>
+				
+				<input type="submit" name="register" value="Register">
+			</div>
+		</form>	
+		</div>
+	<script type="text/javascript" src="subject.js"></script> 
+</body>
+</html>
